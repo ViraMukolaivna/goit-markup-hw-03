@@ -36,14 +36,24 @@ ul {
     padding-left: 0;
 }
 .container {
-    width: 1170px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
+
 /* верхній хедер */
+
+.page-header-container {
+    display: flex; 
+    justify-content: space-between;
+}
+.page-nav {
+    display: flex;
+    align-items: center;
+}
 .header {
     background-color: var(--color-white);
 }
@@ -55,6 +65,7 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: var(--letter-spacing-normal);
+    margin-right: 93px;
 }
 .first-part {
     color: var(--color-light-blue);
@@ -62,18 +73,18 @@ ul {
 .second-part {
     color: #000000 ;
 }
-.head-web-studio,
-.menu-nav {
-    align-items: center;
+
+.navigation-menu {
+    display: flex;
+    column-gap: 50px;
 }
 
+.menu-nav-link:hover { color:var(--color-dark-blue)}
+.menu-nav-link:focus { color:var(--color-dark-blue)} 
+/* для обох сторінок */
 
-.menu-nav:hover { color:var(--color-dark-blue)}
-    
-.menu-nav:focus { color:var(--color-dark-blue)} 
 
-
-.menu-nav {
+.menu-nav-link {
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 14px;
@@ -81,6 +92,11 @@ ul {
     letter-spacing: 0.02em;
     color: var(--color-dark);
 }
+
+/* .menu-nav-item:not(:last-child) {
+    margin-right: 50px;
+} */
+
 .current {
     color: var(--color-light-blue);
 }
@@ -88,8 +104,16 @@ ul {
 
 
 /* контакти */
+.contacts-list {
+    display: flex;
+}
 .active-link:hover, .active-link:focus { color:var(--color-dark-blue)}
-.contacts-link {
+
+.item-email {
+    margin-left: 50px;
+}
+
+.item-link {
     font-family: var(--primary-font);
     color: var(--color-light-grey);
     font-weight: 500;
