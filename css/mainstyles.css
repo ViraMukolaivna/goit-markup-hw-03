@@ -18,6 +18,8 @@ a {
 }
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 button {
     cursor: pointer;
@@ -56,6 +58,8 @@ ul {
 }
 .header {
     background-color: var(--color-white);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .head-web-studio {
@@ -130,15 +134,25 @@ ul {
         background-color: var(--color-dark-grey);
         color: var(--color-white);
         font-family: var(--primary-font);
+
+    }
+    .decision {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        display: block;
+        text-align: center;
+        width: 696px;
     }
     .title-decision {
+        font-family: var(--primary-font);
         font-weight: 900;
         font-size: 44px;
-        line-height: 60px;
-        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+        margin-bottom: 30px;
+        
     }
+
     .button-order {
         background-color: var(--color-light-blue);
         color: var(--color-white);
@@ -147,9 +161,6 @@ ul {
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
-        display: flex;
-        align-items: center;
-        text-align: center;
         letter-spacing: 0.06em;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
@@ -175,6 +186,17 @@ ul {
         font-family: var(--primary-font);
         font-size: 14px;
         letter-spacing: var(--letter-spacing-normal);
+        
+
+    }
+    .priorities-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+    }
+    .item-priorities {
+        /* width: 270px; */
+        flex-basis: calc((100% - 90px) / 4);
 
     }
     .title {   
@@ -184,14 +206,27 @@ ul {
         line-height: 16px;
         text-transform: uppercase;
         color: var(--color-dark);
+        
     }
     .text {   
         line-height: 24px;            
         color: var(--color-light-grey);
+        margin-top: 10px;
     }
 /* чим ми займаємося */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
 img {
     display: block;}
+.working-list {
+    display: flex;
+    justify-content: space-between;
+}
 .section-title {
     font-family: var(--primary-font);
     font-weight: 700;
@@ -200,37 +235,73 @@ img {
     text-align: center;
     letter-spacing: var(--letter-spacing-normal);
     color: var(--color-dark);
+    margin-bottom: 50px;
 }
 
 /* команда */
     .team-space {
-    background-color: #F5F5F5;
+    background-color: #F5F4FA;
 }
-    .card {
+.team-list {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.card {
     background-color: var(--color-white);  
     font-family: var(--primary-font);
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
     letter-spacing: var(--letter-spacing-normal);
+    align-items: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    flex-basis: calc((100% - 90px) / 4);
+}
+.info-team {
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
     .name {
     font-weight: 500;
     color: var(--color-dark);
+    margin-bottom: 10px;
 }
 
     .position {
+    font-weight: 400;
     color: var(--color-light-grey); 
+    
 }
 /* нижній хедер */
-
+.footer {
+    background-color: var(--color-dark-grey);
+    }
+    
+.fotter-a {
+    font-style: normal;
+     padding-top: 60px;
+     padding-bottom: 60px;
+}
+.f-contact-list {
+  display: block;
+  flex-wrap: wrap;
+  row-gap: 9px;
+  margin-top: 20px;
+}
 .footer-web-studio {
     font-family: var(--secondary-font);
     font-weight: 700;
-    font-style: normal;
+    
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: var(--letter-spacing-normal);
+   
+    
+    
 }
 .f-first-part {
     color: var(--color-light-blue);
@@ -251,16 +322,13 @@ img {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: var(--letter-spacing-normal);
-    font-style: normal;
+    
 }
 .geo {
     color: var(--color-white);  
 }
 .bottom-contacts {
     color: #ffffff99;
-}
-.footer {
-background-color: var(--color-dark-grey);
 }
 
 
@@ -274,6 +342,7 @@ background-color: var(--color-dark-grey);
 /* верхній хедер */
 .header {
     background-color: var(--color-white);
+    border-bottom: 1px solid #ECECEC;
 }
 .head-web-studio,
 .menu-nav {
@@ -317,7 +386,10 @@ background-color: var(--color-dark-grey);
     
 /* контакти */
 
-
+.port-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
     
 /* buttons */
 .title-projects, 
@@ -334,11 +406,22 @@ background-color: var(--color-dark-grey);
     margin: -1px;
 }
 
+.btn-filter {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    align-items: center;
+    padding-left: 300px;
+    margin-bottom: 50px;
 
+}
 .button {
     background-color: #F5F4FA;
     color: var(--color-dark);
-    border-color: #F5F4FA;
+    border-radius: 4px;
+    border: none;
+    width: 130px;
+    height: 38px;
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
@@ -351,8 +434,22 @@ background-color: var(--color-dark-grey);
 
 .button:hover, .button:focus  { background-color:var(--color-dark-blue); color: var(--color-white); }
 
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
-
+.card-project {
+    border: 1px solid #EEEEEE;
+    flex-basis: calc((100% - 60px) / 3);
+}
+.info-project {
+    display: block;
+    padding-left: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .h-project {
     font-family: var(--primary-font);
     font-weight: 700;
@@ -375,7 +472,10 @@ background-color: var(--color-dark-grey);
 }
 .footer-a {
     font-style:normal;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+
     
 .f-first-part {
     color: var(--color-light-blue);
