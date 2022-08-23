@@ -1,3 +1,5 @@
+
+/* ===============КОНСТАНТИ============================ */
 :root {
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
@@ -45,11 +47,14 @@ ul {
     padding-right: 15px;
 }
 
+/* =============СТУДІЯ============================= */
 
-/* верхній хедер */
+
+/* ===================ХЕДЕР ГОЛОВНОЇ СТОРІНКИ==================== */
 
 .page-header-container {
     display: flex; 
+    align-items: center; 
     justify-content: space-between;
 }
 .page-nav {
@@ -58,8 +63,8 @@ ul {
 }
 .header {
     background-color: var(--color-white);
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .head-web-studio {
@@ -77,17 +82,13 @@ ul {
 .second-part {
     color: #000000 ;
 }
-
 .navigation-menu {
     display: flex;
     column-gap: 50px;
 }
-
 .menu-nav-link:hover { color:var(--color-dark-blue)}
 .menu-nav-link:focus { color:var(--color-dark-blue)} 
 /* для обох сторінок */
-
-
 .menu-nav-link {
     font-family: var(--primary-font);
     font-weight: 500;
@@ -97,15 +98,9 @@ ul {
     color: var(--color-dark);
 }
 
-/* .menu-nav-item:not(:last-child) {
-    margin-right: 50px;
-} */
-
 .current {
     color: var(--color-light-blue);
 }
-
-
 
 /* контакти */
 .contacts-list {
@@ -125,24 +120,21 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-
+/* =========ХЕДЕР ГОЛОВНОЇ СТОРІНКИ=================*/
     
- /* головна частина */
+ /* ======================МЕЙН================== */
     
-/* шапка з кнопкою */
+/* ===================ШАПКА==================== */
     .section-decision {
         background-color: var(--color-dark-grey);
         color: var(--color-white);
         font-family: var(--primary-font);
-
-    }
-    .decision {
         padding-top: 200px;
         padding-bottom: 200px;
         display: block;
         text-align: center;
-        width: 696px;
     }
+    
     .title-decision {
         font-family: var(--primary-font);
         font-weight: 900;
@@ -150,13 +142,11 @@ ul {
         letter-spacing: 0.06em;
         text-transform: uppercase;
         margin-bottom: 30px;
-        
     }
 
     .button-order {
         background-color: var(--color-light-blue);
         color: var(--color-white);
-        border-color: var(--color-light-blue);
         font-family: var(--primary-font);
         font-weight: 700;
         font-size: 16px;
@@ -164,10 +154,16 @@ ul {
         letter-spacing: 0.06em;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
+        border: 0;
+        padding-top: 10px;
+        padding-left: 32px;
+        padding-bottom: 10px;
+        padding-right: 32px;
     }
-    .button-order:hover { background-color:var(--color-dark-blue) }
+    .button-order:hover { background-color:var(--color-dark-blue); }
+/* ===================ШАПКА==================== */
 
-/* пріоритети */
+/* ==========ОСОБЛИВОСТІ=========================== */
 
     .head-title-priorities, 
     .visually-hidden {
@@ -182,47 +178,49 @@ ul {
         clip-path: inset(50%);
         margin: -1px;
     }
+
     .priorities {
         font-family: var(--primary-font);
         font-size: 14px;
         letter-spacing: var(--letter-spacing-normal);
-        
-
     }
+    
     .priorities-list {
         display: flex;
         flex-wrap: wrap;
         column-gap: 30px;
     }
+    
     .item-priorities {
-        /* width: 270px; */
         flex-basis: calc((100% - 90px) / 4);
-
     }
+    
     .title {   
-        
         font-size: 14px;
         font-weight: 700;
         line-height: 16px;
         text-transform: uppercase;
         color: var(--color-dark);
-        
     }
     .text {   
         line-height: 24px;            
         color: var(--color-light-grey);
         margin-top: 10px;
     }
-/* чим ми займаємося */
+/* ==========ОСОБЛИВОСТІ=========================== */
+
+
+
+/* =============НАША РОБОТА=============================== */
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-
+}
+.working {
+    padding-top: 0;
 }
 
-img {
-    display: block;}
 .working-list {
     display: flex;
     justify-content: space-between;
@@ -237,15 +235,15 @@ img {
     color: var(--color-dark);
     margin-bottom: 50px;
 }
+/* =============НАША РОБОТА=============================== */
 
-/* команда */
-    .team-space {
+/* ==================КОМАНДА===================*/
+.team-space {
     background-color: #F5F4FA;
 }
 .team-list {
     display: flex;
     justify-content: space-between;
-   
 }
 .card {
     background-color: var(--color-white);  
@@ -262,46 +260,38 @@ img {
     display: block;
     text-align: center;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-    .name {
+.name {
     font-weight: 500;
+    font-size: 16px;
     color: var(--color-dark);
     margin-bottom: 10px;
 }
-
-    .position {
+.position {
     font-weight: 400;
     color: var(--color-light-grey); 
-    
 }
-/* нижній хедер */
+/* ==================КОМАНДА===================*/
+
+/* ==============ФУТЕР================================ */
 .footer {
     background-color: var(--color-dark-grey);
+    padding-top: 60px;
+    padding-bottom: 60px;
     }
-    
 .fotter-a {
     font-style: normal;
-     padding-top: 60px;
-     padding-bottom: 60px;
 }
-.f-contact-list {
-  display: block;
-  flex-wrap: wrap;
-  row-gap: 9px;
-  margin-top: 20px;
-}
+
 .footer-web-studio {
     font-family: var(--secondary-font);
     font-weight: 700;
-    
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: var(--letter-spacing-normal);
-   
-    
-    
+    margin-bottom: 20px;
 }
 .f-first-part {
     color: var(--color-light-blue);
@@ -309,12 +299,17 @@ img {
 .f-second-part {
     color: var(--color-white) ;
 }
+.f-contact-list {
+  display: block;
+}
+.f-contact-list:not(:last-child) {
+    margin-bottom:9px;
+  }
 .geo:hover { color:var(--color-dark-blue)}
 .bottom-contacts:hover { color:var(--color-dark-blue)}
 
 .geo:focus { color:var(--color-dark-blue)} 
 .bottom-contacts:focus { color:var(--color-dark-blue)} 
-
 
 .geo,
 .bottom-contacts {
@@ -322,7 +317,6 @@ img {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: var(--letter-spacing-normal);
-    
 }
 .geo {
     color: var(--color-white);  
@@ -330,16 +324,17 @@ img {
 .bottom-contacts {
     color: #ffffff99;
 }
+/* ==============ФУТЕР================================ */
 
 
 
 
 
 
-/* PORTOFOLIO */
+/* ===========================PORTOFOLIO====================== */
 
 
-/* верхній хедер */
+/* ===========ХЕДЕР ПОРТФОЛІО================== */
 .header {
     background-color: var(--color-white);
     border-bottom: 1px solid #ECECEC;
@@ -369,11 +364,10 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-        
-    .nav-link-stud:hover, .nav-link-stud:focus { color:var(--color-dark-blue)}
-    .nav-link-port:hover, .nav-link-port:focus { color:var(--color-dark-blue)}
-    .nav-link-cont:hover, .nav-link-cont:focus { color:var(--color-dark-blue)}
+}        
+.nav-link-stud:hover, .nav-link-stud:focus { color:var(--color-dark-blue)}
+.nav-link-port:hover, .nav-link-port:focus { color:var(--color-dark-blue)}
+.nav-link-cont:hover, .nav-link-cont:focus { color:var(--color-dark-blue)}
         
 .nav-link-port{   
     color: var(--color-light-blue);
@@ -383,15 +377,10 @@ img {
 .nav-link-cont {   
     color:var(--color-dark);
 }
-    
-/* контакти */
+/* ===========ХЕДЕР ПОРТФОЛІО================== */
 
-.port-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
     
-/* buttons */
+/* ============КНОПКИ ФІЛЬТРІВ============================== */
 .title-projects, 
 .visually-hidden {
     position: absolute;
@@ -411,7 +400,7 @@ img {
     flex-wrap: wrap;
     column-gap: 8px;
     align-items: center;
-    padding-left: 300px;
+    justify-content: center;
     margin-bottom: 50px;
 
 }
@@ -420,35 +409,40 @@ img {
     color: var(--color-dark);
     border-radius: 4px;
     border: none;
-    width: 130px;
-    height: 38px;
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
     letter-spacing: var(--letter-spacing-normal);
-    
-   
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
-.button:hover, .button:focus  { background-color:var(--color-dark-blue); color: var(--color-white); }
+.button:hover,
+.button:focus  { 
+background-color:var(--color-dark-blue);
+color: var(--color-white); }
+/* ============КНОПКИ ФІЛЬТРІВ============================== */
+
+/* ===========ФОТО ПРОЄКТІВ======================== */
 
 .project-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-
 .card-project {
-    border: 1px solid #EEEEEE;
     flex-basis: calc((100% - 60px) / 3);
 }
 .info-project {
     display: block;
     padding-left: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
 }
 .h-project {
     font-family: var(--primary-font);
@@ -457,6 +451,7 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--color-dark);
+    margin-bottom: 4px;
 }
 .text-project {
     font-family: var(--primary-font);
@@ -466,7 +461,10 @@ img {
     color: var(--color-light-grey);
 
 }
-/* footer */
+/* ===========ФОТО ПРОЄКТІВ======================== */
+
+
+/* ====================ФУТЕР ПОРТФОЛІО============*/
 .footer {
     background-color: var(--color-dark-grey);
 }
@@ -475,21 +473,19 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
-    
 .f-first-part {
     color: var(--color-light-blue);
 }
-    
 .f-second-part {
     color: var(--color-white) ;
 }
 
-    .geo:hover { color:var(--color-dark-blue)}
-    .bottom-contacts:hover { color:var(--color-dark-blue)}
-        
-    .geo:focus { color:var(--color-dark-blue)} 
-    .bottom-contacts:focus { color:var(--color-dark-blue)} 
+.geo:hover, 
+.geo:focus,
+.bottom-contacts:hover, 
+.bottom-contacts:focus   { 
+    color:var(--color-dark-blue);
+}
 
 .geo,
 .bottom-contacts {
@@ -501,7 +497,7 @@ img {
 .geo {
     color: var(--color-white);  
 }
-
 .bottom-contacts { 
     color: #ffffff99; 
 }
+/* ====================ФУТЕР ПОРТФОЛІО============*/
